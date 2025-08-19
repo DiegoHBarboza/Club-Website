@@ -8,7 +8,7 @@ html {                      /**ROOT FONT SIZE*/
 }
 
 body {
-    background-color: #fcbc34;
+    background-color: white;
 }
 
 .background {                      /*!TWO CHILDREN SIDE BY SIDE WITH FLEX*/
@@ -23,9 +23,9 @@ body {
 .background-white {                
     /*border: 3px solid peru;*/
     height: 100%;
-    background-color: white;
     padding: .5rem;
     position: fixed;
+    box-shadow: 0 10px 10px #000000;
 }
 
 /*.navegation {
@@ -47,11 +47,13 @@ section div img {           /*LOGO SETTINGS*/
     margin: 0.3rem;
     padding: .8rem;
     border-radius: 3px;
-    background-color: #fcbc34;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .navegation p:hover {
-    opacity: 0.9;
+    background-color: #006093;
+    transition: .5s background-color;
+    color: white;
     box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .4);
 }
 
@@ -62,13 +64,14 @@ section div img {           /*LOGO SETTINGS*/
 }
 
 .navegation .brand p {
-    background-color: #006093;
-    color: white;
+    background-color: hsl(0, 0%, 95%);
     margin-bottom: 0px;
 }
 
 .navegation .brand p:hover {
-    opacity: 0.9;
+    background-color: #006093;
+    transition: .5s background-color;
+    color: white;
     box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .4);
 }
 

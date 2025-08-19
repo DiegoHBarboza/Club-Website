@@ -10,7 +10,7 @@ html {                      /**ROOT FONT SIZE*/
 }
 
 body {
-    background-color: #fcbc34;
+    background-color: white;
     height: 100%;
 }
 
@@ -27,9 +27,9 @@ body {
 .background-white {                
     /*border: 3px solid peru;*/
     height: 100%;
-    background-color: white;
     padding: .5rem;
     position: fixed;
+    box-shadow: 0 10px 10px #000000;
 }
 
 /*.navegation {
@@ -51,11 +51,13 @@ section div img {           /*LOGO SETTINGS*/
     margin: 0.3rem;
     padding: .8rem;
     border-radius: 3px;
-    background-color: #fcbc34;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .navegation p:hover {
-    opacity: 0.9;
+    background-color: #006093;
+    transition: .5s background-color;
+    color: white;
     box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .4);
 }
 
@@ -66,13 +68,14 @@ section div img {           /*LOGO SETTINGS*/
 }
 
 .navegation .brand p {
-    background-color: #006093;
-    color: white;
+    background-color: hsl(0, 0%, 95%);
     margin-bottom: 0px;
 }
 
 .navegation .brand p:hover {
-    opacity: 0.9;
+    background-color: #006093;
+    transition: .5s background-color;
+    color: white;
     box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .4);
 }
 
@@ -102,8 +105,9 @@ footer p {
     
 }
 
-.background-orange h1 {
+.background-orange .desktop h1 {
     /*border: 2px solid yellow;*/
+    padding-top: 1rem;
     text-align: center;
     font-family: "Roboto";
     font-size: 2rem;
@@ -118,11 +122,11 @@ section .flex-content {
 
 
 section .background-orange img {
-    /*border: 2px solid black;*/
+    border: 5px solid hsl(0, 0%, 95%);
     height: 16rem;
     width: auto;
     margin: 0px 2rem 4rem 2rem;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 section .background-orange img:hover {
@@ -145,14 +149,31 @@ section .flex-content-botton img {
     padding: 0px;
 } 
 
+.background-orange .mobile h1 {
+    display: none;
+}
+
 /*? --------------------CONTENT ON RIGHT SETTINGS END-----------------*/
 
 /*& -----------------PHONE CONTENT ON RIGHT SETTINGS START-------------*/
 
 @media only screen and (max-width: 750px) and (orientation: portrait)  {
-    .background-orange h1 {
+    .background-orange .desktop h1 {
         font-size: 1rem;
-        margin: 0px 0rem 0rem 0rem;
+        margin: 1rem 0rem 1rem 0rem;
+        display: none;
+    }
+
+    .background-orange .mobile {
+        /*border: 2px solid red;*/
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .background-orange .mobile h1 {
+        display: contents;
+        font-size: 2rem;
+        font-weight: 700;
     }
 
     section .background-orange img {
