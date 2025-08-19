@@ -1,0 +1,208 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {                      /**ROOT FONT SIZE*/
+    font-size: 16px;
+}
+
+body {
+    background-color: #fcbc34;
+}
+
+.background {                      /*!TWO CHILDREN SIDE BY SIDE WITH FLEX*/
+    /*border: 4px solid purple;*/
+    display: flex;
+}
+
+
+/*? --------------------NAV BAR ON THE LEFT SETTINGS START-----------------*/
+
+
+.background-white {                
+    /*border: 3px solid peru;*/
+    height: 100%;
+    background-color: white;
+    padding: .5rem;
+    position: fixed;
+}
+
+/*.navegation {
+    /*border: 2px solid blue;
+}*/
+
+section div img {           /*LOGO SETTINGS*/
+    /*border: 2px solid red;*/
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.navegation p {
+    /*border: 2px solid salmon;*/
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0.3rem;
+    padding: .8rem;
+    border-radius: 3px;
+    background-color: #fcbc34;
+}
+
+.navegation p:hover {
+    opacity: 0.9;
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .4);
+}
+
+.brand-container {
+    /*border: 2px solid  black;*/
+    height: 5rem;
+    align-content:end;
+}
+
+.navegation .brand p {
+    background-color: #006093;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.navegation .brand p:hover {
+    opacity: 0.9;
+    box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .4);
+}
+
+footer p {
+    font-family: "Roboto";
+    position: absolute;
+    bottom: 3px;
+    padding: .8rem 1.3rem .8rem 1.3rem;
+    border-radius: 3px;
+    text-align: center;
+    justify-self: center;
+    background-color: #006093;
+    color: white;
+}
+
+/*? --------------------NAV BAR ON THE LEFT SETTINGS END-----------------*/
+
+/*? --------------------CONTENT ON RIGHT SETTINGS START-----------------*/
+
+.background-orange {
+    /*border: 3px solid orangered;*/
+    font-family: "Roboto";
+    margin-left: 140px;
+}
+
+.activities-grid {
+    /*border: 2px solid blue;*/
+    font-size: 1.4rem;
+}
+
+.flex-content {
+    /*border: 2px solid brown;*/
+    display: flex;
+    padding: 1rem;
+}
+
+section .background-orange img {
+    /*border: 2px solid black;*/
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+/*.main-content {
+    /*border: 2px solid yellow;
+}*/
+
+section .background-orange .b {
+    /*border: 2px solid green;*/
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    font-weight: 700;
+}
+
+section .background-orange .c {
+    /*border: 2px solid cornflowerblue;*/
+    text-align: justify;
+    word-wrap: break-word;
+    font-weight: 300;
+    line-height: 1.4;
+    word-spacing: 0.2rem;
+}
+
+/*? --------------------CONTENT ON RIGHT SETTINGS END-----------------*/
+
+/*? --------------------VIDEO CONTENT ON RIGHT SETTINGS START-----------------*/
+
+.videos {
+    /*border: 2px solid aquamarine;*/
+    margin-right: 1rem;
+    margin-left: 10.5rem;
+    text-align: center;
+}
+
+.videos .d {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5px;
+}
+
+/*? --------------------VIDEO CONTENT ON RIGHT SETTINGS END-----------------*/
+
+/*& -----------------PHONE CONTENT ON RIGHT SETTINGS START-------------*/
+
+@media only screen and (max-width: 750px) and (orientation: portrait) {
+    .flex-content {
+        padding: 0.4rem 0.2rem 0.5rem 0.5rem;
+    }
+    
+    section .background-orange .b {
+        text-align: center;
+    }
+    
+    section .background-orange .c {
+        font-size: 1rem;
+    }
+    
+    section .background-orange img {
+        display: none;
+    }
+
+    .videos {
+        margin-right: 0rem;
+        margin-left: 1px;
+    }
+
+    .videos .d {
+        width: 11rem;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-height: 380px) and (orientation: landscape) {
+    section .background-orange img {
+        display: none;
+    }
+
+    section .background-orange .c {
+        font-size: 1rem;
+    }
+
+    .videos {
+        margin-right: 0rem;
+        margin-left: 1px;
+    }
+
+    .videos .d {
+        width: 20rem;
+        height: auto;
+    }
+
+    footer p {
+        display: none;
+    }
+}
+
+/*& -----------------PHONE CONTENT ON RIGHT SETTINGS END-------------*/
